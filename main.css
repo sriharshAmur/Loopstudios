@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+#landing {
+    /* background-image: url('./images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: 'Alata', sans-serif;
+    position: relative;
+}
+
+#hero-image {
+    opacity: 0;
+    position: absolute;
+    filter: opacity(0);
+    filter: brightness(100);
+    border: 30px solid red;
+    backdrop-filter: opacity(0%);
+}
+
+#hero-content-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hero-content {
+    width: 100%;
+    height: 100%;
+    padding: 50px 10vw;
+    /* border: 10px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-text-wrapper {
+    flex: 1;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#hero-text {
+    margin: auto 0;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 70px;
+    border: 2px solid white;
+}
+
+/* About Setion */
+
+#about-wrapper {
+    width: 100vw;
+    padding: 50px 10vw;
+    margin: 10vh 0;
+}
+
+#about {
+    /* display: flex; */
+    /* align-items: end; */
+    position: relative;
+}
+
+#about-image {
+    /* flex: 1; */
+    width: 60%;
+}
+
+#about-text-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 4vw;
+    width: fit-content;
+}
+
+#about-text-container {
+    background-color: white;
+    padding: 70px 90px 0;
+    width: 39vw;
+    margin-left: auto;
+}
+
+#about-headline {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+#about-text {
+    color: hsl(0, 0%, 41%);
+    font-family: 'Alata', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Categories */
+
+#categories-wrapper {
+    width: 100vw;
+    padding: 50px 10vw;
+    margin: 10vh 0;
+    /* border: 10px solid green; */
+}
+
+#categories {
+}
+
+#categories-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#categories-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+}
+
+#categories-button {
+    font-family: 'Alata', sans-serif;
+    border: 2px solid;
+    padding: 10px 30px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+#categories-content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+#category {
+    /* background-image: url('./images/desktop/image-deep-earth.jpg'); */
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vh;
+    position: relative;
+    margin: 15px 0;
+}
+#category-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* color: hsl(0, 0%, 55%); */
+    /* backdrop-filter: ;
+     */
+
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* background-blend-mode: lighten; */
+    margin-top: auto;
+    filter: brightness(100%);
+}
