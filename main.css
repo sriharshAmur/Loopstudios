@@ -239,7 +239,6 @@
     display: flex;
     justify-content: end;
     margin-bottom: 30px;
-    border: 1px solid red;
 }
 
 #footer-social-links img {
@@ -250,5 +249,4 @@
 #footer-copyright {
     color: hsl(0, 0%, 55%);
     text-align: right;
-    border: 1px solid red;
 }
