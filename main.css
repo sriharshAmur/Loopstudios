@@ -54,10 +54,15 @@
     border: 2px solid white;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* About Setion */
 
 #about-wrapper {
-    width: 100vw;
+    /* width: 100vw; */
     padding: 50px 10vw;
     margin: 10vh 0;
 }
@@ -105,9 +110,11 @@
 /* Categories */
 
 #categories-wrapper {
-    width: 100vw;
+    /* width: 100vw; */
     padding: 50px 10vw;
     margin: 10vh 0;
+    overflow: hidden;
+    box-sizing: border-box;
     /* border: 10px solid green; */
 }
 
@@ -132,6 +139,12 @@
     padding: 10px 30px;
     letter-spacing: 3px;
     font-size: 15px;
+    cursor: pointer;
+}
+
+#categories-button:hover {
+    text-decoration: underline;
+    background-color: hsl(0, 0%, 95%);
 }
 
 #categories-content {
@@ -139,21 +152,34 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
     width: 100%;
     /* border: 1px solid red; */
+    /* overflow: hidden; */
     color: white;
+    height: 120vh;
 }
 
-#category {
+.category {
     /* background-image: url('./images/desktop/image-deep-earth.jpg'); */
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 60vh;
+    background-size: cover;
+    /* height: 60vh; */
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    /* border: 2px solid purple; */
     position: relative;
-    margin: 15px 0;
+    /* margin: 15px 0; */
+    cursor: pointer;
 }
-#category-text {
+
+.category:hover {
+    opacity: 0.9;
+}
+
+.category-text {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
     height: fit-content;
@@ -169,4 +195,60 @@
     /* background-blend-mode: lighten; */
     margin-top: auto;
     filter: brightness(100%);
+}
+
+/* Footer */
+
+#footer-container {
+    color: white;
+    background-color: black;
+    /* width: 100vw; */
+    padding: 50px 10vw;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family: 'Alata', sans-serif;
+}
+
+#footer-top img {
+    width: 40%;
+    cursor: pointer;
+}
+
+#footer-links {
+    display: flex;
+    margin-top: 30px;
+}
+
+#footer-link {
+    margin-right: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#footer-social-links {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+    border: 1px solid red;
+}
+
+#footer-social-links img {
+    margin-left: 20px;
+    width: 20px;
+}
+
+#footer-copyright {
+    color: hsl(0, 0%, 55%);
+    text-align: right;
+    border: 1px solid red;
 }
